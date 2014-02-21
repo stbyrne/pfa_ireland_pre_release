@@ -1,0 +1,162 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+        
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--<link rel="stylesheet" href="js/jquery.mobile-1.4.0-beta.1.min.css" />-->
+    <!--<link rel="stylesheet" href="js/jquery.mobile.structure-1.4.0-beta.1.min.css" />-->
+    <link rel="stylesheet" href="js/custom/jquery.mobile.custom.theme.min.css" />
+    <link rel="stylesheet" href="js/custom/jquery.mobile.custom.structure.min.css" />
+        <!--<link rel="stylesheet" href="js/jquery.mobile.structure-1.3.2.min.css" />-->
+    
+     
+    <script type="text/javascript" charset="utf-8" src="phonegap.js" ></script>
+    <script src="statusbar.js"></script>
+    
+        <script src="js/jq.js"></script>
+    
+    
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    
+        <script>
+                
+                $(document).bind('mobileinit', function(){
+                    $.mobile.defaultPageTransition="fade";
+                    $.mobile.buttonMarkup.hoverDelay = 0;
+            
+                });
+        
+         
+        </script>
+    
+        
+    <script type="text/javascript">
+    
+        
+        function onBodyLoad()
+        {
+        
+                document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        
+        /* When this function is called, Cordova has been initialized and is ready to roll */
+        /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+        see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+        for more details -jm */
+        function onDeviceReady()
+        {
+    // Used by unit tests to tell when the page is loaded.
+    window.pageIsLoaded = true;
+    StatusBar.styleLightContent();
+    StatusBar.backgroundColorByHexString("#5f5f5f");
+    setTimeout(function(){
+        navigator.splashscreen.hide();
+    }, 4000);
+        
+                // do your thing!
+                // navigator.notification.alert("Cordova is working");     
+        }        
+        </script>
+        
+</head>
+    
+<body onload="onBodyLoad()">
+    
+<!--Home page-->
+    
+    
+    <div id="home" data-role="page">
+        
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <!--<a href="#left-panel" id="menuNav" class="ui-nodisc-icon" data-role="none"><img src="images/menu_g.png"/></a>-->
+                <a href="#left-panel" id="menuNav" class="ui-nodisc-icon" data-role="none"><img src="images/svg/nav_g.svg"/>Menu</a>
+                <h1 id="sectionTitle">PFAI</h1>
+                <h2 id="subTitle">Supporting the players</h2>
+                <!--<a href="#help" id="helpNav" class="ui-nodisc-icon" data-role="none">Help</a>-->
+                
+            </div>
+            
+            <div data-role="content">
+                
+                <div class="home-display">
+                    
+                <h3>Killian Brennan</h3>
+                <p>2013 PLAYERS PLAYER OF THE YEAR</p>
+                <!--<img class="home-image"/>-->
+                    
+                </div>
+                
+                <div id="cont-link">
+                    <a href="#contact"><span>Contact us</span><span class="arrow-right-home"></span></a>
+                </div>
+                  
+            </div>
+        
+            <!--Slide Content Left Panel-->
+            
+            <div data-role="panel" id="left-panel" data-theme="c" data-inset="true">
+                <!--<div data-role="controlgroup">
+                    <p>Menu</p>
+                </div>-->
+                <div data-role="content">
+                    <ul id="homeList" data-role="listview" data-icon="false" class="ui-icon-nodisc ui-icon-alt">
+                        <!--<li><a href="#transferlist"><span>Transfer List</span></a></li>-->
+                    
+                    </ul>
+                    
+                </div>
+
+            </div>
+    </div>
+        
+<!--End homepage-->
+    
+<!--Contact -->
+    
+    <div id="contact" data-role="page">
+        
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <!--<a href="#left-panel" id="menuNav" class="ui-nodisc-icon" data-role="none"><img src="images/menu_g.png"/></a>-->
+                <a href="#home" id="menuNav" class="ui-nodisc-icon" data-role="none"><img src="images/svg/nav_g.svg"/>Back</a>
+                <h1 id="sectionTitle">Get in touch</h1>
+                <!--<a href="#help" id="helpNav" class="ui-nodisc-icon" data-role="none">Help</a>-->
+                
+            </div>
+        
+            <div class="ui-panel-content-wrap-closed">
+            
+                <div id="content">
+                    
+                    <div class="contact-display">
+                    
+                        <h3>Room 214 Players’ Union Offices</h3>
+                        <p>National Sports Campus</p>
+                        <p>Abbotstown</p>
+                        <p>Dublin 15</p>
+                            <p>Ireland</p> 
+                        
+                    </div>
+                  
+                    <div id="com">
+                        
+                            <div class="hide"><a href="tel:0035318999350" id="call"><!--<img src="images/call_gr.png"/>--><span class="icon-mobile"></span></a></div>
+                            <div><a href="mailto:info@pfai.ie" id="mail"><span class="icon-mail"></span></a></div>
+                            <div><a href="https://twitter.com/PFAIOfficial" id="twitter"><span class="icon-twitter"></span></a></div>
+                            <div><a href="https://www.facebook.com/pages/PFAIOfficial/137333183069003" id="face"><span class="icon-facebook"></span></a></div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+    </div>
+    
+    <!--<script src="js/fast.js"></script>-->
+    <script src="js/custom/jquery.mobile.custom.min.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
