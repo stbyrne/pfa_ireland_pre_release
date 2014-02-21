@@ -636,12 +636,25 @@ span .ui-icon .ui-icon-plus{
 }
 
 /* Tansfer Window Page */
-
-.tw-date{
-    background: #fafafa;
+.tw-title, .tw-date{
+    
     text-align: center;
     padding: 15px 0;
+}
+.tw-title{
+    background: rgb(240, 130, 0);
+    color: #fafafa;
+    text-shadow: none;
+}
+.tw-date{
+    background: #fff;
     color: rgba(0, 170, 50, 0.85);
+    -webkit-box-shadow: 0 0 2px rgb(95,95,95);
+    box-shadow: 0 0 2px rgb(95,95,95);
+}
+.tw-content{
+    text-align: center;
+    border-bottom: 1px solid rgb(95,95,95);
 }
 
 
