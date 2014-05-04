@@ -227,7 +227,7 @@ function initiateList(){
     
 ////////////////////Create empty table for dynamic transfer listed player//////////////////////////
     
-    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/></th><th>Name</th><th>Club</th><th>Pos</th><th>Age</th><th>dob</th><th>kg</th></tr></thead><tbody></tbody></table>');
+    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/></th><th>Name</th><th>Club</th><th>Pos</th><th>DOB</th></tr></thead><tbody></tbody></table>');
     
     /*$('#transferlistContent').html('<table><thead><tr><th>No.</th><th>Name</th><th>Club</th><th>Pos</th><th>Age</th><th>dob</th><th>kg</th><th>Exp</th></tr></thead><tbody></tbody></table>');*/
     
@@ -238,8 +238,8 @@ function initiateList(){
         $.ajax({
         
             /*url: 'getList.php',*/
-            url: 'http://www.stuartbyrne.com/pfai/getList.php',
-            dataType: 'json',
+            url: 'http://pfai.fireflyweb.ie/mobile/transferliststream',
+            dataType: 'xml',
             cache: false,
             success: function(data) {
                 console.log(data);
@@ -263,29 +263,68 @@ function initiateList(){
     getList(function(list){
         
         console.log(list);
+            
         
-        var $item = list.item,
+        var $list = xmlToJson(list),
+            $items = $list.result.item,
             $tbody = $('#transferlistContent tbody');
         
-                        
-        $($item).each(function(i){
+        $.each($items, function(i, detail){
             
-            var playerNum = i + 1,
-                $name = $(this)[0].task_name,
-                $club = $(this)[0].task_club,
-                $pos = $(this)[0].task_pos,
-                $age = $(this)[0].task_age,
-                $dob = $(this)[0].task_dob,
-                $weight = $(this)[0].task_weight/*,
-                $exp = $(this)[0].task_exp;*/
-                
-            /*$tbody.append($('<tr/>', {
-                'id': 'row'
-            }).html('<td>' + playerNum + '</td><td>' + $name + '</td><td>' + $club + '</td><td>' + $pos + '</td><td>' + $age + '</td><td>' + $dob + '</td><td>' + $weight + '</td><td style="background-color:' + $exp + '"></td>'));*/
+            
+            var playerNum = $(this.nid).attr('#text'),
+                $firstName = $(this.First_Name).attr('#text'),
+                $lastName = $(this.Last_Name).attr('#text'),
+                $name = $firstName+' '+$lastName,
+                $dobTag = $(this.Date_of_Birth).attr('#text'),
+                $dob = $dobTag.replace(/<\/?[^>]+>/gi, ''),
+                $previousArray = [],
+                $positionArray = [],
+                $clubNum = Object.keys($items[i].Previous_Clubs.item).length,
+                $positionNum = Object.keys($items[i].Positions.item).length;
+            
+            console.log($dob);
+            
+////////////////////Loop thru Positions from json//////////////////////////
+            
+            if($positionNum<=1){
+                var $position = $(detail.Positions.item).attr('#text');
+                $positionArray.push($position);
+                console.log($position);
+            }
+            
+            if($positionNum>1){
+                for(var j = 0; j < $items[i].Positions.item.length; j++){
+                    var $position = $(detail.Positions.item[j]).attr('#text');
+                    $positionArray.push($position);
+                    console.log($position);
+                }
+               
+            }
+            
+////////////////////Loop thru Clubs from json//////////////////////////
+            
+            if($clubNum<=1){
+                var $previousClubs = $(detail.Previous_Clubs.item).attr('#text');
+                $previousArray.push($previousClubs);
+                console.log($previousClubs);
+            }
+            
+            if($clubNum>1){
+                for(var j = 0; j < $items[i].Previous_Clubs.item.length; j++){
+                    var $previousClubs = $(detail.Previous_Clubs.item[j]).attr('#text');
+                    $previousArray.push($previousClubs);
+                    console.log($previousClubs);
+                }
+            }
             
             $tbody.append($('<tr/>', {
                 'id': 'row'
-            }).html('<td>' + playerNum + '</td><td>' + $name + '</td><td>' + $club + '</td><td>' + $pos + '</td><td>' + $age + '</td><td>' + $dob + '</td><td>' + $weight + '</td>'));
+            }).html('<td>' + playerNum + '</td><td>' + $name + '</td><td>' + $previousArray + '</td><td>' + $positionArray + '</td><td>' + $dob + '</td>'))
+            
+            /*$tbody.append($('<tr/>', {
+                'id': 'row'
+            }).html('<td>' + playerNum + '</td><td>' + $name + '</td><td>' + $club + '</td><td>' + $pos + '</td><td>' + $dob + '</td>'));*/
             
             });
         });
@@ -297,8 +336,9 @@ function initiateList(){
             $.ajax({
             
                 /*url: 'getNews.php',*/
-                url: 'http://www.stuartbyrne.com/pfai/getNews.php',
-                dataType: 'json',
+                /*url: 'http://www.stuartbyrne.com/pfai/getNews.php',*/
+                url: 'http://pfai.fireflyweb.ie/mobile/pfainews',
+                dataType: 'xml',
                 cache: false,
                 success: function(data) {
                     console.log(data);
@@ -321,10 +361,10 @@ function initiateList(){
     
     getNews(function(news){
         
-        var $newsitem = news.item,
+        var $news = xmlToJson(news),
+            $newsitem = $news.result.item,
             newsContent = $('#newsContent');
         
-        console.log($newsitem);
     
         newsContent.append($('<ul/>', {
                         'data-theme': 'c',
@@ -335,27 +375,47 @@ function initiateList(){
         }));
         
                         
-        $($newsitem).each(function(i){
+        $.each($newsitem, function(i, detail){
             
             var articleNum = i + 1,
                 $body = $('body'),
-                $articleid = $(this)[0].article_id,
-                $articledate = $(this)[0].article_date,
-                $headline = $(this)[0].article_headline,
-                $image = $(this)[0].article_image,
-                $caption = $(this)[0].article_caption,
-                $text = $(this)[0].article_text,
+                $articleid = $(this.nid).attr('#text'),
+                $articledate = "TBC",
+                $headline = $.trim($(this.node_title).attr('#text')),
+                $imageArray = [],
+                $imageNum = Object.keys($newsitem[i].field_image.item).length,
+                $text = $(this.body).attr('#text'),
+                $intro = $text.substr(0,30),
                 $newslist = $('#newslist');
+            
+            console.log($intro);
+            
+            if($imageNum<=1){
+                var $imageString = $(detail.field_image.item).attr('#text'),
+                    regex = /<img.*?src="(.*?)"/,
+                    $image = regex.exec($imageString)[1];
+                    
+                $imageArray.push($image);
+                console.log($image);
+            }
+            
+            /*if($positionNum>1){
+                for(var j = 0; j < $items[i].Positions.item.length; j++){
+                    var $position = $(detail.Positions.item[j]).attr('#text');
+                    $positionArray.push($position);
+                    console.log($position);
+                }
+               
+            }*/
         
         $newslist.append(
                         $('<li />', {
                             /*'data-theme': 'c',*/
                             'data-icon': 'false',
                             'class': 'ui-icon-alt ui-icon-nodisc'
-                        }).html('<a href="#' + $articleid + '"><img src="' + $image + '"><h2>' + $headline + '</h2><p>' + $text +'</p><p class="ui-li-aside">' + $articledate + '</p></a><span class="arrow-right-news"></span>'));
+                        }).html('<a href="#' + $articleid + '"><img src="' + $imageArray[0] + '"><h2>' + $headline + '</h2><p>' + $intro +'</p><p class="ui-li-aside">' + $articledate + '</p></a><span class="arrow-right-news"></span>'));
     
 
-                console.log($articleid);
                 
                 $body.append($('<div />', {
                             id: $articleid,
@@ -371,7 +431,7 @@ function initiateList(){
                                 'data-role': 'content',
                                 'id': $articleid + 'Content',
                                 'class': 'feature'
-                            }).html('<h2 class="article-headline">' + $headline + '</h2><p class="article-caption">' + $caption + '</p><img src="'+ $image +'"/><span class="article-date">' + $articledate + '</span><p>'+ $text +'</p>')).append($('<div />', {
+                            }).html('<h2 class="article-headline">' + $headline + '</h2><img src="'+ $image +'"/><span class="article-date">' + $articledate + '</span><p>'+ $text +'</p>')).append($('<div />', {
                                     'data-role': 'panel',
                                     'class': 'ui-icon-alt',
                                     id: 'left-panel'
@@ -478,11 +538,11 @@ $(app.pagelist).each(function(i){
         // Add an overlay to the map of current lat/lng
         // Add custom image to map
         var pfaiOffices = 'images/loc.svg';
-        /*var mark = 'images/mark.svg';*/
+        var mark = 'images/mark.svg';
         var marker = new google.maps.Marker({
             position: latlng,
             map: map,
-            /*icon: mark,*/
+            icon: mark,
             title: "You are here!"
         });
         var marker2 = new google.maps.Marker({
