@@ -239,7 +239,7 @@ function initiateList(){
         
             /*url: 'getList.php',*/
             url: 'http://pfai.fireflyweb.ie/mobile/transferliststream',
-            dataType: 'xml',
+            dataType: 'json',
             cache: false,
             success: function(data) {
                 console.log(data);
@@ -263,31 +263,30 @@ function initiateList(){
     getList(function(list){
         
         console.log(list);
-            
         
-        var $list = xmlToJson(list),
-            $items = $list.result.item,
-            $tbody = $('#transferlistContent tbody');
+        $.each(list, function(i){
+             console.log(this['First Name']);  
+        });
         
-        $.each($items, function(i, detail){
+        var $tbody = $('#transferlistContent tbody');
+        
+        $.each(list, function(i){
             
             
-            var playerNum = $(this.nid).attr('#text'),
-                $firstName = $(this.First_Name).attr('#text'),
-                $lastName = $(this.Last_Name).attr('#text'),
+            var playerNum = this['nid'],
+                $firstName = this['First Name'],
+                $lastName = this['Last Name'],
                 $name = $firstName+' '+$lastName,
-                $dobTag = $(this.Date_of_Birth).attr('#text'),
+                $dobTag = this['Date of Birth'],
                 $dob = $dobTag.replace(/<\/?[^>]+>/gi, ''),
-                $previousArray = [],
-                $positionArray = [],
-                $clubNum = Object.keys($items[i].Previous_Clubs.item).length,
-                $positionNum = Object.keys($items[i].Positions.item).length;
+                $previousArray = this['Previous Clubs'],
+                $positionArray = this['Positions'];
             
             console.log($dob);
             
 ////////////////////Loop thru Positions from json//////////////////////////
             
-            if($positionNum<=1){
+            /*if($positionNum<=1){
                 var $position = $(detail.Positions.item).attr('#text');
                 $positionArray.push($position);
                 console.log($position);
@@ -302,9 +301,9 @@ function initiateList(){
                
             }
             
-////////////////////Loop thru Clubs from json//////////////////////////
+/////////////*////////Loop thru Clubs from json//////////////////////////
             
-            if($clubNum<=1){
+            /*if($clubNum<=1){
                 var $previousClubs = $(detail.Previous_Clubs.item).attr('#text');
                 $previousArray.push($previousClubs);
                 console.log($previousClubs);
@@ -316,7 +315,7 @@ function initiateList(){
                     $previousArray.push($previousClubs);
                     console.log($previousClubs);
                 }
-            }
+            }*/
             
             $tbody.append($('<tr/>', {
                 'id': 'row'
@@ -338,7 +337,7 @@ function initiateList(){
                 /*url: 'getNews.php',*/
                 /*url: 'http://www.stuartbyrne.com/pfai/getNews.php',*/
                 url: 'http://pfai.fireflyweb.ie/mobile/pfainews',
-                dataType: 'xml',
+                dataType: 'json',
                 cache: false,
                 success: function(data) {
                     console.log(data);
@@ -349,7 +348,7 @@ function initiateList(){
         
                     url: 'getNews.json',
                     dataType: 'json',
-                       cache: false,
+                   cache: false,
                     success: function(data) {
                         holdNews(data);
                     }
@@ -361,9 +360,7 @@ function initiateList(){
     
     getNews(function(news){
         
-        var $news = xmlToJson(news),
-            $newsitem = $news.result.item,
-            newsContent = $('#newsContent');
+        var newsContent = $('#newsContent');
         
     
         newsContent.append($('<ul/>', {
@@ -375,29 +372,29 @@ function initiateList(){
         }));
         
                         
-        $.each($newsitem, function(i, detail){
+        $.each(news, function(i){
             
             var articleNum = i + 1,
                 $body = $('body'),
-                $articleid = $(this.nid).attr('#text'),
+                $articleid = this['nid'],
                 $articledate = "TBC",
-                $headline = $.trim($(this.node_title).attr('#text')),
-                $imageArray = [],
-                $imageNum = Object.keys($newsitem[i].field_image.item).length,
-                $text = $(this.body).attr('#text'),
-                $intro = $text.substr(0,30),
+                $headline = $.trim(this['node_title']),
+                regex = /<img.*?src="(.*?)"/,
+                $image = regex.exec(this['field_image'])[1],
+                $text = this['body'],
+                $intro = $.trim($text.replace('<p>', '').substr(0,30)),
                 $newslist = $('#newslist');
             
             console.log($intro);
             
-            if($imageNum<=1){
+            /*if($imageNum<=1){
                 var $imageString = $(detail.field_image.item).attr('#text'),
                     regex = /<img.*?src="(.*?)"/,
                     $image = regex.exec($imageString)[1];
                     
                 $imageArray.push($image);
                 console.log($image);
-            }
+            }*/
             
             /*if($positionNum>1){
                 for(var j = 0; j < $items[i].Positions.item.length; j++){
@@ -413,7 +410,7 @@ function initiateList(){
                             /*'data-theme': 'c',*/
                             'data-icon': 'false',
                             'class': 'ui-icon-alt ui-icon-nodisc'
-                        }).html('<a href="#' + $articleid + '"><img src="' + $imageArray[0] + '"><h2>' + $headline + '</h2><p>' + $intro +'</p><p class="ui-li-aside">' + $articledate + '</p></a><span class="arrow-right-news"></span>'));
+                        }).html('<a href="#' + $articleid + '"><img src="' + $image + '"><h2>' + $headline + '</h2><p>' + $intro +'</p><p class="ui-li-aside">' + $articledate + '</p></a><span class="arrow-right-news"></span>'));
     
 
                 
