@@ -377,15 +377,18 @@ function initiateList(){
             var articleNum = i + 1,
                 $body = $('body'),
                 $articleid = this['nid'],
-                $articledate = "TBC",
+                $timestamp = new Date(this['date']*1000),
+                $articledate = $timestamp.toDateString(),
+                /*$articledate = $datestring.slice(0, -4),*/
                 $headline = $.trim(this['node_title']),
                 regex = /<img.*?src="(.*?)"/,
                 $image = regex.exec(this['field_image'])[1],
+                $thumb = regex.exec(this['thumbnail'])[1],
                 $text = this['body'],
                 $intro = $.trim($text.replace('<p>', '').substr(0,30)),
                 $newslist = $('#newslist');
             
-            console.log($intro);
+            console.log($articledate);
             
             /*if($imageNum<=1){
                 var $imageString = $(detail.field_image.item).attr('#text'),
@@ -410,7 +413,7 @@ function initiateList(){
                             /*'data-theme': 'c',*/
                             'data-icon': 'false',
                             'class': 'ui-icon-alt ui-icon-nodisc'
-                        }).html('<a href="#' + $articleid + '"><img src="' + $image + '"><h2>' + $headline + '</h2><p>' + $intro +'</p><p class="ui-li-aside">' + $articledate + '</p></a><span class="arrow-right-news"></span>'));
+                        }).html('<a href="#' + $articleid + '"><img src="' + $thumb + '"><h2>' + $headline + '</h2><p>' + $intro +'</p><p class="ui-li-aside">' + $articledate + '</p></a><span class="arrow-right-news"></span>'));
     
 
                 

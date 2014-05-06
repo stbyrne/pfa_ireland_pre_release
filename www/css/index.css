@@ -568,9 +568,13 @@ span{
     text-align: center;
     margin: 0 auto;
 }
-.feature p, .ui-content p{
+.feature p{
         font-size: .8em;
-        font-weight: 200;
+        font-weight: 100;
+    }
+.ui-content p{
+        font-size: 1em;
+        font-weight: 100;
     }
 /*.feature p{
     font: 1em Calibri, Arial, Verdana, sans-serif !important;
@@ -647,13 +651,14 @@ span .ui-icon .ui-icon-plus{
 .app .ui-listview li .ui-btn p {
     color: #939393 !important;
 }
-.app .ui-listview li .ui-li-aside {
-    color: rgb(0, 185, 50) !important;
-    width: 25% !important;
+.app .ui-listview li p.ui-li-aside {
+    color: rgb(0, 185, 50);
+    width: 30%;
+    font-size: .6em;
 }
 
 .app .ui-listview li p {
-    color: rgb(183, 183, 183) !important;
+    color: rgb(183, 183, 183);
 }
 
 
