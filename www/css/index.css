@@ -796,10 +796,10 @@ span .ui-icon .ui-icon-plus{
     #maps div.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed {  
     height: 97%;
     }
-    .app .ui-listview:not(#listLeft) li a.ui-link-inherit{
+    /*.app .ui-listview:not(#listLeft) li a.ui-link-inherit{
         min-height: 79px;
         padding-left: 140px;
-    }
+    }*/
     .app .ui-listview li a.ui-link-inherit img.ui-li-thumb{
         max-height: 100px;
         max-width: 100px;
