@@ -385,7 +385,7 @@ function initiateList(){
                 $image = regex.exec(this['field_image'])[1],
                 $thumb = regex.exec(this['thumbnail'])[1],
                 $text = this['body'],
-                $intro = $.trim($text.replace('<p>', '').substr(0,50)),
+                $intro = $.trim($text.replace('<p>', '').substr(0,80)),
                 $newslist = $('#newslist');
             
             console.log($articledate);
@@ -538,11 +538,11 @@ $(app.pagelist).each(function(i){
         // Add an overlay to the map of current lat/lng
         // Add custom image to map
         var pfaiOffices = 'images/loc.svg';
-        var mark = 'images/mark.svg';
+        /*var mark = 'images/mark.svg';*/
         var marker = new google.maps.Marker({
             position: latlng,
             map: map,
-            icon: mark,
+            /*icon: mark,*/
             title: "You are here!"
         });
         var marker2 = new google.maps.Marker({

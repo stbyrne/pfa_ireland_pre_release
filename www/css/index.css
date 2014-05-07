@@ -65,13 +65,14 @@
 .home-display h3{
     width: 30%;
     font-size: 2em;
-    margin: 20px 0;
+    margin: 10px 0;
     font-weight: 100;
     letter-spacing: -1px;
 }
-.home-display p{
-    margin: 20px 0;
-    width: 30%;
+.home-display p#desc{
+    margin: 10px 0;
+    width: 35%;
+    font-size: .8em;
 }
 .contact-display{
     width: 100%;
@@ -686,13 +687,13 @@ span .ui-icon .ui-icon-plus{
     font-size: 2.5em;
     letter-spacing: 0;
     }
-    .home-display p{
+    .home-display p#desc{
     margin: 20px 0;
     width: 30%;
     font-size: 1.4em;
     }
     .feature img, .static-image{
-    max-width: 60%;
+    max-width: 80%;
     
     }
     .feature .article-headline{
@@ -757,9 +758,9 @@ span .ui-icon .ui-icon-plus{
     tbody{
         font-size: 1.2em;  
     }
-    .feature img{
+    /*.feature img{
     width: 50%;
-    }
+    }*/
     #com{
     /*left:0;
     bottom: 0;
@@ -796,13 +797,13 @@ span .ui-icon .ui-icon-plus{
     #maps div.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed {  
     height: 97%;
     }
-    /*.app .ui-listview:not(#listLeft) li a.ui-link-inherit{
+    .app .ui-listview:not(#listLeft) li.ui-li .ui-btn-inner a.ui-link-inherit{
         min-height: 79px;
         padding-left: 140px;
-    }*/
-    .app .ui-listview li a.ui-link-inherit img.ui-li-thumb{
-        max-height: 100px;
-        max-width: 100px;
+    }
+    /*.app .ui-listview li a.ui-link-inherit img.ui-li-thumb*/
+    .ui-li-thumb{
+        zoom: 1.25;
     }
     .app .ui-listview li a.ui-link-inherit p.ui-li-desc{
         margin: -.1em 0 .6em;
