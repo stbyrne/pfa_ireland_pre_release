@@ -385,7 +385,7 @@ function initiateList(){
                 $image = regex.exec(this['field_image'])[1],
                 $thumb = regex.exec(this['thumbnail'])[1],
                 $text = this['body'],
-                $intro = $.trim($text.replace('<p>', '').substr(0,30)),
+                $intro = $.trim($text.replace('<p>', '').substr(0,50)),
                 $newslist = $('#newslist');
             
             console.log($articledate);

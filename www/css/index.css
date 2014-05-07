@@ -570,12 +570,16 @@ span{
 }
 .feature p{
         font-size: .8em;
-        font-weight: 100;
+        font-weight: 200;
     }
 .ui-content p{
         font-size: 1em;
-        font-weight: 100;
+        font-weight: 200;
     }
+p.ui-li-desc{
+    font-size: .7em;
+    font-weight: 200;
+}
 /*.feature p{
     font: 1em Calibri, Arial, Verdana, sans-serif !important;
 }*/
