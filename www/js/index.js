@@ -280,7 +280,7 @@ function initiateList(){
                 $dobTag = this['Date of Birth'],
                 $dob = $dobTag.replace(/<\/?[^>]+>/gi, ''),
                 $previousArray = this['Previous Clubs'],
-                $positionArray = this['Positions'];
+                $positionArray = this['Position'];
             
             console.log($dob);
             
