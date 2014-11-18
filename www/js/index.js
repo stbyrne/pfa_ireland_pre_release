@@ -227,7 +227,7 @@ function initiateList(){
     
 ////////////////////Create empty table for dynamic transfer listed player//////////////////////////
     
-    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/></th><th>Name</th><th>Club</th><th>Pos</th><th>DOB</th></tr></thead><tbody></tbody></table>');
+    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/>Name</th><th>Club</th><th>Pos</th><th>DOB</th></tr></thead><tbody></tbody></table>');
     
     /*$('#transferlistContent').html('<table><thead><tr><th>No.</th><th>Name</th><th>Club</th><th>Pos</th><th>Age</th><th>dob</th><th>kg</th><th>Exp</th></tr></thead><tbody></tbody></table>');*/
     
@@ -278,11 +278,17 @@ function initiateList(){
                 $lastName = this['Last Name'],
                 $name = $firstName+' '+$lastName,
                 $dobTag = this['Date of Birth'],
-                $dob = $dobTag.replace(/<\/?[^>]+>/gi, ''),
+                $dobString = $($dobTag).attr('content'),
+                $dob = new Date($dobString),
+                $dobDate = $dob.getDate(),
+                $dobMonth = $dob.getMonth(),
+                $dobYear = $dob.getFullYear(),
+                $dobPlayer = $dobDate + '/' + $dobMonth + '/' + $dobYear,
+                /*$dob = $dobTag.replace(/<\/?[^>]+>/gi, ''),*/
                 $previousArray = this['Previous Clubs'],
                 $positionArray = this['Position'];
             
-            console.log($dob);
+            console.log($dobPlayer);
             
 ////////////////////Loop thru Positions from json//////////////////////////
             
@@ -317,9 +323,11 @@ function initiateList(){
                 }
             }*/
             
+            /*<td>' + playerNum + '</td>*/
+            
             $tbody.append($('<tr/>', {
                 'id': 'row'
-            }).html('<td>' + playerNum + '</td><td>' + $name + '</td><td>' + $previousArray + '</td><td>' + $positionArray + '</td><td>' + $dob + '</td>'))
+            }).html('<td>' + $name + '</td><td>' + $previousArray + '</td><td>' + $positionArray + '</td><td>' + $dobPlayer + '</td>'))
             
             /*$tbody.append($('<tr/>', {
                 'id': 'row'
