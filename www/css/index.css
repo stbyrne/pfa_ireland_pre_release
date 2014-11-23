@@ -51,6 +51,10 @@
 /*#left-panel.ui-body-c{
     background-image: linear-gradient( #5F5F5F , #2B2B2B );   
 }*/
+
+/*div.title-holder{
+    padding: 5px;   
+}*/
 .home-image .home-display{
      /*text-align: center;*/ 
     text-shadow: none;
@@ -63,16 +67,17 @@
     color: rgb(95,95,95);
 }
 .home-display h3{
-    width: 30%;
+    /*width: 30%;*/
     font-size: 2em;
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: 100;
     letter-spacing: -1px;
 }
 .home-display p#desc{
-    margin: 10px 0;
-    width: 35%;
-    font-size: .8em;
+    margin: 5px 0;
+    width: 50%;
+    font-size: .6em;
+    color: rgb(0, 185, 50);
 }
 .contact-display{
     width: 100%;
@@ -424,7 +429,7 @@ tr{
 }
 th, td{
     display: table-cell;
-    padding: 6px 0;
+    padding: 6px 3px 6px 0;
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 tbody{
@@ -659,7 +664,7 @@ span .ui-icon .ui-icon-plus{
 .app .ui-listview li p.ui-li-aside {
     color: rgb(0, 185, 50);
     width: 30%;
-    font-size: .6em;
+    font-size: .65em;
 }
 
 .app .ui-listview li p {
@@ -682,6 +687,11 @@ span .ui-icon .ui-icon-plus{
         background-image: url('../images/montage/home_768_blur.png');
         background: rgb(255,255,255);
     }*/
+    
+    div.title-holder{
+    padding: 15px;   
+    }
+    
     .home-display h3{
     width: 35%;
     font-size: 2.5em;
@@ -689,7 +699,7 @@ span .ui-icon .ui-icon-plus{
     }
     .home-display p#desc{
     margin: 20px 0;
-    width: 30%;
+    /*width: 30%;*/
     font-size: 1.4em;
     }
     .feature img, .static-image{

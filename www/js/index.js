@@ -227,7 +227,7 @@ function initiateList(){
     
 ////////////////////Create empty table for dynamic transfer listed player//////////////////////////
     
-    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/>Name</th><th>Club</th><th>Pos</th><th>DOB</th></tr></thead><tbody></tbody></table>');
+    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/>Player</th><th>Club</th><th>Pos</th><th>DOB</th></tr></thead><tbody></tbody></table>');
     
     /*$('#transferlistContent').html('<table><thead><tr><th>No.</th><th>Name</th><th>Club</th><th>Pos</th><th>Age</th><th>dob</th><th>kg</th><th>Exp</th></tr></thead><tbody></tbody></table>');*/
     
