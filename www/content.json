@@ -6,11 +6,13 @@ jsonCallback(
         "section": [
             {
                 "id": "transferlist",
-                "title": "Transfer List"
+                "title": "Transfer List",
+                "content": "Unable to connect to the Transfer List database at this time. Please check your connection and try again. "
             },
             {
                 "id": "news",
-                "title": "News"
+                "title": "News",
+                "content": "Unable to connect to the Latest News database at this time. Please check your connection and try again. "
             },
             {
                 "id": "agency",
