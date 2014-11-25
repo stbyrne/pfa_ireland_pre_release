@@ -14,6 +14,11 @@
 /*.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed{
     position: static;   
 }*/
+body .ui-body-c {
+    text-shadow: none;
+    background: #f9f9f9;
+}
+
 .ui-panel.ui-panel-position-left.ui-panel-display-reveal.ui-body-c.ui-panel-animate.ui-panel-open{
     position: fixed;
 }
@@ -169,7 +174,7 @@
     float: left;
     text-align: center;
     color: #fff;
-    background: rgba(255,255,255,.45);
+    background: rgba(255,255,255,.85);
     border-bottom: 1px solid rgb(130,130,130);
 }
 #cont-link a span:not(.arrow-right-home){
@@ -179,6 +184,8 @@
     text-shadow: none;
     position: relative;
     top: 20%; 
+    color: #00b937;
+    color: rgba(0, 170, 50, 0.85);
 }
 
 #cont-link a:active {
@@ -648,6 +655,12 @@ span .ui-icon .ui-icon-plus{
 .ui-panel-inner{
     padding: 5px !important;
 }
+/*Transfer List*/
+.tw-date{
+    background: rgb(210, 210, 210); 
+    padding: 20px 15px;
+    margin: 0 -15px;
+}
 
 /* Maps */
 #maps, #mapsContent,#maps div.ui-panel-content-wrap-closed { 
@@ -659,7 +672,7 @@ span .ui-icon .ui-icon-plus{
     height: inherit;   
 }
 .app .ui-listview li .ui-btn p {
-    color: #939393 !important;
+    color: rgb(147, 147, 147) !important;
 }
 .app .ui-listview li p.ui-li-aside {
     color: rgb(0, 185, 50);

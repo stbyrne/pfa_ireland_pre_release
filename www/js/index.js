@@ -17,8 +17,8 @@ $(function(){
 function jsonTitles(holdData){
 
     $.ajax({
-        /*url: 'http://www.stuartbyrne.com/pfai/content.json',*/
-        url: 'content.json',
+        url: 'http://www.stuartbyrne.com/pfai/content.json',
+        /*url: 'content.json',*/
         jsonpCallback: 'jsonCallback',
         dataType: 'jsonp',
         cache: false,
@@ -231,7 +231,7 @@ function initiateList(){
     
     /*$('#transferlistContent').html('<table><thead><tr><th>No.</th><th>Name</th><th>Club</th><th>Pos</th><th>Age</th><th>dob</th><th>kg</th><th>Exp</th></tr></thead><tbody></tbody></table>');*/
     
-////////////////////Get Current Transfer List from getList.php//////////////////////////
+////////////////////Get Current Transfer List//////////////////////////
     
     function getList(holdData){
                 
@@ -336,7 +336,7 @@ function initiateList(){
             });
         });
     
-////////////////////Get Current News from getNews.php//////////////////////////
+////////////////////Get Current News from pfai.ie//////////////////////////
     
     function getNews(holdNews){
                     
