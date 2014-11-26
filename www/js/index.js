@@ -288,42 +288,7 @@ function initiateList(){
                 $previousArray = this['Previous Clubs'],
                 $positionArray = this['Position'];
             
-            console.log($dobPlayer);
-            
-////////////////////Loop thru Positions from json//////////////////////////
-            
-            /*if($positionNum<=1){
-                var $position = $(detail.Positions.item).attr('#text');
-                $positionArray.push($position);
-                console.log($position);
-            }
-            
-            if($positionNum>1){
-                for(var j = 0; j < $items[i].Positions.item.length; j++){
-                    var $position = $(detail.Positions.item[j]).attr('#text');
-                    $positionArray.push($position);
-                    console.log($position);
-                }
-               
-            }
-            
-/////////////*////////Loop thru Clubs from json//////////////////////////
-            
-            /*if($clubNum<=1){
-                var $previousClubs = $(detail.Previous_Clubs.item).attr('#text');
-                $previousArray.push($previousClubs);
-                console.log($previousClubs);
-            }
-            
-            if($clubNum>1){
-                for(var j = 0; j < $items[i].Previous_Clubs.item.length; j++){
-                    var $previousClubs = $(detail.Previous_Clubs.item[j]).attr('#text');
-                    $previousArray.push($previousClubs);
-                    console.log($previousClubs);
-                }
-            }*/
-            
-            /*<td>' + playerNum + '</td>*/
+            console.log($firstName);
             
             $tbody.append($('<tr/>', {
                 'id': 'row'
