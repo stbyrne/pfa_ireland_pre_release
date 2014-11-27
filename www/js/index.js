@@ -273,7 +273,7 @@ function initiateList(){
         $.each(list, function(i){
             
             
-            var playerNum = this['nid'],
+            var /*playerNum = this['nid'],*/
                 $firstName = this['First Name'],
                 $lastName = this['Last Name'],
                 $name = $firstName+' '+$lastName,
@@ -365,7 +365,12 @@ function initiateList(){
                 $intro = $.trim($text.replace('<p>', '').substr(0,80)),
                 $newslist = $('#newslist');
             
-            console.log($thumb);
+                console.log($image.substring(0, 6));
+            
+            /*if($image.substring(0, 6) == "/sites"){
+                console.log($image);
+                
+            }*/
             
             
             
