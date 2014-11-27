@@ -245,7 +245,7 @@ function initiateList(){
                 holdData(data);
             },
             error: function(){
-                   $.ajax({
+                $.ajax({
         
                     url: 'getList.json',
                     dataType: 'json',
@@ -253,11 +253,13 @@ function initiateList(){
                     success: function(data) {
                         console.log(data);
                         holdData(data);
+                        alert('The latest "Transfer List" is unavailable at the moment. Please try again later.');
                     }
                 });
+                
             }
         });
-}
+    }
     
     
     getList(function(list){
@@ -317,17 +319,19 @@ function initiateList(){
                     holdNews(data);
                 },
                 error: function(){
-                   $.ajax({
-        
-                    url: 'getNews.json',
-                    dataType: 'json',
-                   cache: false,
-                    success: function(data) {
-                        console.log(data);
-                        holdNews(data);
-                    }
-                });
-            }
+                    
+                    $.ajax({
+                        
+                        url: 'getNews.json',
+                        dataType: 'json',
+                        cache: false,
+                        success: function(data) {
+                            console.log(data);
+                            holdNews(data);
+                            alert('The latest "News" feed is unavailable at the moment. Please try again later.');
+                                }
+                        });
+                }
             });
     }
     
