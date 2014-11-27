@@ -1,0 +1,23 @@
+<result is_array="true">
+    <script id="tinyhippos-injected"/>
+    <item>
+        <nid>106</nid>
+        <First_Name>Robert</First_Name>
+        <Last_Name>Birdsall</Last_Name>
+        <Date_of_Birth>
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="1991-03-28T00:00:00-08:00">Thursday, March 28, 1991</span>
+        </Date_of_Birth>
+        <Position>Goalkeeper</Position>
+        <Previous_Clubs>Cobh Ramblers</Previous_Clubs>
+    </item>
+    <item>
+        <nid>107</nid>
+        <First_Name>David</First_Name>
+        <Last_Name>Browne</Last_Name>
+        <Date_of_Birth>
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="1994-07-29T00:00:00-07:00">Friday, July 29, 1994</span>
+        </Date_of_Birth>
+        <Position>Goalkeeper</Position>
+        <Previous_Clubs>Cobh Ramblers</Previous_Clubs>
+    </item>
+</result>

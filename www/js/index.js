@@ -237,7 +237,6 @@ function initiateList(){
                 
         $.ajax({
         
-            /*url: 'getList.php',*/
             url: 'http://pfai.fireflyweb.ie/mobile/transferliststream',
             dataType: 'json',
             cache: false,
@@ -252,6 +251,7 @@ function initiateList(){
                     dataType: 'json',
                     cache: false,
                     success: function(data) {
+                        console.log(data);
                         holdData(data);
                     }
                 });
@@ -323,6 +323,7 @@ function initiateList(){
                     dataType: 'json',
                    cache: false,
                     success: function(data) {
+                        console.log(data);
                         holdNews(data);
                     }
                 });
@@ -344,8 +345,11 @@ function initiateList(){
                     
         }));
         
+        
                         
         $.each(news, function(i){
+            
+            console.log(this['node_title']);
             
             var articleNum = i + 1,
                 $body = $('body'),
@@ -355,13 +359,15 @@ function initiateList(){
                 /*$articledate = $datestring.slice(0, -4),*/
                 $headline = $.trim(this['node_title']),
                 regex = /<img.*?src="(.*?)"/,
-                $image = regex.exec(this['field_image'])[1],
                 $thumb = regex.exec(this['thumbnail'])[1],
+                $image = regex.exec(this['field_image'])[1],
                 $text = this['body'],
                 $intro = $.trim($text.replace('<p>', '').substr(0,80)),
                 $newslist = $('#newslist');
             
-            console.log($articledate);
+            console.log($thumb);
+            
+            
             
             /*if($imageNum<=1){
                 var $imageString = $(detail.field_image.item).attr('#text'),

@@ -1,1 +1,24 @@
-{"list":[{"First Name":"Owen","Last Name":"Heary","Position":"Defender","Previous Clubs":"Bohemians","task_dob":"1976-10-04"}]}
+[
+    {
+    "nid": "106",
+    "First Name": "Robert",
+    "Last Name": "Birdsall",
+    "Date of Birth": {
+        "content": "1991-03-28T00:00:00-08:00",
+        "#text": "Thursday, March 28, 1991"
+    },
+    "Position": "Goalkeeper",
+    "Previous Clubs": "Cobh Ramblers"
+    }, 
+    {
+    "nid": "107",
+    "First Name": "David",
+    "Last Name": "Browne",
+    "Date of Birth": {
+        "content": "1994-07-29T00:00:00-07:00",
+        "#text": "Friday, July 29, 1994"
+    },
+    "Position": "Goalkeeper",
+    "Previous Clubs": "Cobh Ramblers"
+    }
+]
