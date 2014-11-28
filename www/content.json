@@ -58,11 +58,11 @@ jsonCallback(
                 "id": "betting",
                 "title": "Betting",
                 "content": "<h2 class='highlight'>Betting</h2><p>You are not allowed to bet on any aspect of matches or competitions or on any football matter over which you could have an influence.<br><br>Players must not bet, either individually, through a third party or as part of a group on any League, Cup or League Cup competition in any division of their competition. This applies to European competition as well if players' clubs are involved.<br><br>You are not permitted to instruct someone to bet on your behalf or as part of a group.<br><h4>Inside information</h4><p>As a player you will often be privy to inside information. This could be injury or team selection news, manager appointment etc.<br><br>You are not allowed to use inside information to place a bet or to instruct someone to do so on your behalf.<br><br>You are not allowed to pass inside information on to others which they could use for betting. This could include word of mouth, text, e-mail or even social media postings.<br><br>To report suspected betting, or any irregularities with regards to integrity, call the 'confidential' telephone no: <a href='tel:0035318999399'>00 353 1 8999399</a><br><br>Alternatively you can email: <a href='mailto:integrity@fai.ie'>integrity@fai.ie</a>"
-            },
+            }/*,
             {
                 "id": "maps",
                 "title": "Maps"
-            }
+            }*/
         ]
     }
 }
