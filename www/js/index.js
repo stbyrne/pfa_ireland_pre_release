@@ -17,8 +17,8 @@ $(function(){
 function jsonTitles(holdData){
 
     $.ajax({
-        url: 'http://www.stuartbyrne.com/pfai/content.json',
-        /*url: 'content.json',*/
+        /*url: 'http://www.stuartbyrne.com/pfai/content.json',*/
+        url: 'content.json',
         jsonpCallback: 'jsonCallback',
         dataType: 'jsonp',
         cache: false,
@@ -94,6 +94,8 @@ jsonTitles(function(content){
                         app.pageidlist.push(pageid);
                         app.pagetextcontent.push(pagecontent);
                         app.staticlist.push(pageid);
+            
+            console.log(pagecontent);
             
 ////////////////////Create List navigation in left panel on home page///////////////////////
             
