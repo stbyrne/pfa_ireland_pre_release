@@ -30,7 +30,6 @@ function jsonTitles(holdData){
             
         },
         error: function() {
-            alert('Unable to connect to database. Current Player Transfer List & Latest News will not be included. Please check your connection and restart the application.');
             
             $.ajax({
        
@@ -43,6 +42,7 @@ function jsonTitles(holdData){
                     console.log(data);
                     holdData(data);
                     initiateBackList();
+                    alert('Unable to connect to database. Current Player Transfer List & Latest News will not be included. Please check your connection and restart the application.');
                     
                 },
                 error: function() {

@@ -661,6 +661,13 @@ span .ui-icon .ui-icon-plus{
     padding: 20px 15px;
     margin: 0 -15px;
 }
+.highlight{
+    background: rgb(0, 170, 50); 
+    color: #fff;
+    padding: 20px 15px;
+    margin: 0 -15px;
+       
+}
 
 /* Maps */
 #maps, #mapsContent,#maps div.ui-panel-content-wrap-closed { 
