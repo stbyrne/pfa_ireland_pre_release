@@ -144,7 +144,7 @@ body .ui-body-c {
     margin: .5em 0;
     text-decoration: none;
     font: 1.2em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     text-shadow: none;
     color: #00b937;
     color: rgba(0, 170, 50, 0.85);
@@ -199,7 +199,7 @@ body .ui-body-c {
 
 /* Over-ride listviews*/
 #newslist li h2{
-     font-weight: 300;  
+     font-weight: 500;  
 }
 
 #homeList li, #newslist li, .ui-btn.ui-btn-icon-right.ui-li-has-arrow.ui-li.ui-btn-up-c {
@@ -463,7 +463,7 @@ tbody{
 }
 #left-panel span{
     font: .8em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
-    font-weight: 200;
+    font-weight: 500;
 }
 #left-panel p{
     font: 1.6em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
@@ -557,7 +557,7 @@ span{
     box-shadow: 0 0 5px rgba(111, 111, 111, 0.85);
 }
 .static-image-small{
-    width: 50%;
+    width: 40%;
     display: block;
     position: relative;
     margin: 5px auto 10px;
@@ -839,7 +839,8 @@ span .ui-icon .ui-icon-plus{
     }
     /*.app .ui-listview li a.ui-link-inherit img.ui-li-thumb*/
     .ui-li-thumb{
-        zoom: 1.25;
+        min-height: 100px;
+        min-width: 100px;
     }
     .app .ui-listview li a.ui-link-inherit p.ui-li-desc{
         margin: -.1em 0 .6em;
