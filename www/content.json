@@ -7,12 +7,12 @@ jsonCallback(
             {
                 "id": "transferlist",
                 "title": "Transfer List",
-                "content": "Unable to connect to the Transfer List database at this time. Please check your connection and try again. "
+                "content": "Unable to connect to the Transfer List database at this time. Please check your connection and try again."
             },
             {
                 "id": "news",
                 "title": "News",
-                "content": "Unable to connect to the Latest News database at this time. Please check your connection and try again. "
+                "content": "Unable to connect to the Latest News database at this time. Please check your connection and try again."
             },
             {
                 "id": "agency",
@@ -61,7 +61,8 @@ jsonCallback(
             },
             {
                 "id": "maps",
-                "title": "Maps"
+                "title": "Maps",
+                "content": "Unable to load your current location at this time. Please check your connection and try again."
             }
         ]
     }
