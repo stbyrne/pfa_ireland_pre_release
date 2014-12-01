@@ -93,14 +93,14 @@ body .ui-body-c {
 }
 .contact-display h3{
     font-size: 1.3em;
-    font-weight: 300;
+    font-weight: 500;
     color: #2B2B2B;
     margin: 10px auto;
 
 }
 .contact-display p{
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 500;
     color: #2B2B2B;
     margin: 10px auto;
 }
@@ -362,7 +362,7 @@ body .ui-body-c {
     color: rgb(95,95,95);
     text-align: center;
     background: #fafafa;
-    background: rgba(245, 245, 245, .6);
+    background: rgba(245, 245, 245, .85);
     -webkit-box-shadow: inset 0 -1px 1px rgba(95,95,95,.8);
     -moz-box-shadow: inset 0 -1px 1px rgb(0,0,0);
     -ms-box-shadow: inset 0 -1px 1px rgb(0,0,0);
