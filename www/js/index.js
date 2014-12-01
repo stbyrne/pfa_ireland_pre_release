@@ -95,8 +95,6 @@ jsonTitles(function(content){
                         app.pagetextcontent.push(pagecontent);
                         app.staticlist.push(pageid);
             
-            console.log(pagecontent);
-            
 ////////////////////Create List navigation in left panel on home page///////////////////////
             
         homeList.append(
@@ -266,12 +264,6 @@ function initiateList(){
     
     getList(function(list){
         
-        console.log(list);
-        
-        $.each(list, function(i){
-             console.log(this['First Name']);  
-        });
-        
         var $tbody = $('#transferlistContent tbody');
         
         $.each(list, function(i){
@@ -292,7 +284,6 @@ function initiateList(){
                 $previousArray = this['Previous Clubs'],
                 $positionArray = this['Position'];
             
-            console.log($firstName);
             
             $tbody.append($('<tr/>', {
                 'id': 'row'
@@ -368,36 +359,10 @@ function initiateList(){
                 $thumb = regex.exec(this['thumbnail'])[1],
                 $image = regex.exec(this['field_image'])[1],
                 $text = this['body'],
-                $intro = $.trim($text.replace('<p>', '').substr(0,80)),
+                $intro = $.trim($text.replace('<p>', '').substr(0,95)),
                 $newslist = $('#newslist');
+
             
-                console.log($image.substring(0, 6));
-            
-            /*if($image.substring(0, 6) == "/sites"){
-                console.log($image);
-                
-            }*/
-            
-            
-            
-            /*if($imageNum<=1){
-                var $imageString = $(detail.field_image.item).attr('#text'),
-                    regex = /<img.*?src="(.*?)"/,
-                    $image = regex.exec($imageString)[1];
-                    
-                $imageArray.push($image);
-                console.log($image);
-            }*/
-            
-            /*if($positionNum>1){
-                for(var j = 0; j < $items[i].Positions.item.length; j++){
-                    var $position = $(detail.Positions.item[j]).attr('#text');
-                    $positionArray.push($position);
-                    console.log($position);
-                }
-               
-            }*/
-        
         $newslist.append(
                         $('<li />', {
                             /*'data-theme': 'c',*/

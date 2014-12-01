@@ -574,7 +574,7 @@ span{
 .feature .article-date{
     color: rgba(0, 170, 50, 0.85);
     font-size: 0.7em;
-    font-weight: 200;
+    font-weight: 500;
 }
 .feature .article-caption{
     font-size: 0.8em;
@@ -903,7 +903,7 @@ span .ui-icon .ui-icon-plus{
         font-size: 1.2em;
     }
     .feature p, .ui-content p{
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 200;
     }
     
