@@ -110,12 +110,12 @@ body .ui-body-c {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-/*#contact div.ui-panel-content-wrap-closed{
+#contact div.ui-panel-content-wrap-closed{
     background-image: url('../images/montage/home_720_blur.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: inherit;
-}*/
+}
 #contact.ui-body-c{
     background: rgb(255,255,255);
 }
@@ -240,7 +240,7 @@ body .ui-body-c {
     height: 25px;
 }
 
-#listLeft li.ui-btn-active a.ui-link-inherit, #homeList li.ui-btn-active a.ui-link-inherit, #newslist li.ui-btn-active a.ui-link-inherit{
+#listLeft li.ui-btn-active a.ui-link-inherit, #homeList li.ui-btn-active a.ui-link-inherit, #newslist li.ui-btn-active a.ui-link-inherit, #newslist li.ui-btn-active p.ui-li-desc{
     color: #fff;
     text-shadow: none;
     background: rgb(95,95,95);
@@ -708,6 +708,10 @@ span .ui-icon .ui-icon-plus{
     }
     #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_768.png');
+    }
+    
+    #contact div.ui-panel-content-wrap-closed{
+    background-image: url('../images/montage/home_768_blur.png');
     }
     /*#contact div.ui-panel-content-wrap-closed{
         background-image: url('../images/montage/home_768_blur.png');
