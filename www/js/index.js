@@ -10,7 +10,6 @@ $(function(){
     
 /*FastClick.attach(document.body);*/
   
-   
 ///////////////////Ajax jsonp function to get data from json file////////////////
 		
     
@@ -71,9 +70,6 @@ jsonTitles(function(content){
             $body = $('body'),
             section = $(content.app.section);
     
-    
-    
-    
 ///////////////////Assigning Titles from json array//////////////////////
     
     
@@ -90,7 +86,6 @@ jsonTitles(function(content){
                         pagecontent = $(this).attr('content');
             
                         app.pagelist.push(pagetitle);
-                        /*testArray.push(pagetitle);*/
                         app.pageidlist.push(pageid);
                         app.pagetextcontent.push(pagecontent);
                         app.staticlist.push(pageid);
@@ -139,9 +134,6 @@ jsonTitles(function(content){
             
 });//////End of Section Loop//////
     
-    
-
-    
 ////////////////////Add loader to Maps page/////////////////////
     
     $('#mapsContent').append($('<div/>', {
@@ -153,51 +145,6 @@ jsonTitles(function(content){
     
     
 });///End jQuery Function///
-
-
-
-
-/////////////Apply click styling to communication buttons on homepage//////////////
-
-/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){};*/
-
- /*if( /Chrome|Safari|IE/i.test(navigator.userAgent) ) {*/
-
-     /*$('#com div a').on('touchstart', function(){
-         $(this).css({'background': 'rgb(95,95,95)', 'color': '#fff'});
-            }).on('touchend', function(){
-                $(this).css({'background': 'rgba(255,255,255,.6)', 'color': 'rgb(95,95,95)'});
-                });*/
-           
-        /*}else{
-            $('#com div a').on('touchstart', function(){
-         $(this).css({'background': 'rgba(209, 209, 209, 0.8)', 'color': '#000'});
-            }).on('touchend', function(){
-                $(this).css({'background': 'rgba(20, 20, 20, 0.8)', 'color': 'rgb(204, 204, 204)'});
-                });
-            
-        }*/
-
-
-/////////////Apply click events to communication buttons on homepage//////////////
-
-/*$('#mail').on('click', function(){
-    $(this).attr('href', 'mailto:info@pfai.ie');
-    });
-
-$('#call').on('click', function(){
-    $(this).attr('href', 'tel:0035318999350');
-    });
-
-$('#twitter').on('click', function(){
-window.open('https://twitter.com/PFAIOfficial');
-    });
-
-$('#face').on('click', function(){
-window.open('https://www.facebook.com/pages/PFAIOfficial/137333183069003');
-    });*/
-
-   
 
 ////////////////////Build transfer list/news pages on successful ajax request//////////////////////////
 
@@ -227,9 +174,7 @@ function initiateList(){
     
 ////////////////////Create empty table for dynamic transfer listed player//////////////////////////
     
-    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/>Player</th><th>Club</th><th>Pos</th><th>DOB</th></tr></thead><tbody></tbody></table>');
-    
-    /*$('#transferlistContent').html('<table><thead><tr><th>No.</th><th>Name</th><th>Club</th><th>Pos</th><th>Age</th><th>dob</th><th>kg</th><th>Exp</th></tr></thead><tbody></tbody></table>');*/
+    $('#transferlistContent').html('<table><thead><tr><th><img src="images/player.svg"/>Player</th><th>Club</th><th>Pos</th><th>Dob</th></tr></thead><tbody></tbody></table>');
     
 ////////////////////Get Current Transfer List//////////////////////////
     
@@ -274,11 +219,11 @@ function initiateList(){
                 $lastName = this['Last Name'],
                 $name = $firstName+' '+$lastName,
                 $dobTag = this['Date of Birth'],
-                $dobString = $($dobTag).attr('content'),
+                $dobString = $($dobTag).attr('content').substr(0,10),
                 $dob = new Date($dobString),
-                $dobDate = $dob.getDate(),
-                $dobMonth = $dob.getMonth(),
-                $dobYear = $dob.getFullYear(),
+                $dobDate = $dobString.substr(8,$dobString.length),
+                $dobMonth = $dobString.substr(5,2),
+                $dobYear = $dobString.substr(0,4),
                 $dobPlayer = $dobDate + '/' + $dobMonth + '/' + $dobYear,
                 /*$dob = $dobTag.replace(/<\/?[^>]+>/gi, ''),*/
                 $previousArray = this['Previous Clubs'],
@@ -288,10 +233,6 @@ function initiateList(){
             $tbody.append($('<tr/>', {
                 'id': 'row'
             }).html('<td>' + $name + '</td><td>' + $previousArray + '</td><td>' + $positionArray + '</td><td>' + $dobPlayer + '</td>'))
-            
-            /*$tbody.append($('<tr/>', {
-                'id': 'row'
-            }).html('<td>' + playerNum + '</td><td>' + $name + '</td><td>' + $club + '</td><td>' + $pos + '</td><td>' + $dob + '</td>'));*/
             
             });
         });
@@ -519,37 +460,6 @@ $(app.pagelist).each(function(i){
     
 //////////////////////End Maps//////////////////////////
 
-//////////////////Add interactive behaviour to menu & home button///////////////////////
-    
-/*setTimeout(function(){
-    
-    var $menu = $('#menuNav');
-    
-    $menu.on('touchstart', function(){
-        $(this).addClass('menuFade');
-        
-    }).on('touchend', function(){
-        $(this).removeClass('menuFade');
-        $(this).fadeOut(200);
-        setTimeout(function(){
-            $menu.fadeIn(300);
-        }, 300);
-    });
-    
-    var $home = $('#homeNav');
-    
-    $home.on('touchstart', function(){
-        $(this).addClass('menuFade');
-        
-    }).on('touchend', function(){
-        $(this).removeClass('menuFade');
-        $(this).fadeOut(200);
-        setTimeout(function(){
-            $home.fadeIn(300);
-        }, 300);
-    });
-    
-}, 5000);*/
 
 
 

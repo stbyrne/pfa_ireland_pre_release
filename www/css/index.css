@@ -95,14 +95,14 @@ body .ui-body-c {
     font-size: 1.3em;
     font-weight: 500;
     color: #2B2B2B;
-    margin: 10px auto;
+    margin: 5px auto;
 
 }
 .contact-display p{
     font-size: 1.2em;
     font-weight: 500;
     color: #2B2B2B;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 #home div.ui-panel-content-wrap-closed, #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
