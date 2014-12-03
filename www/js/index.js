@@ -21,7 +21,7 @@ function jsonTitles(holdData){
         jsonpCallback: 'jsonCallback',
         dataType: 'jsonp',
         cache: false,
-        timeout: 10000,
+        timeout: 15000,
         success: function(data) {
             /*console.log(data);*/
             holdData(data);
