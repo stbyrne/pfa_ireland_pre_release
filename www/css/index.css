@@ -823,15 +823,16 @@ span .ui-icon .ui-icon-plus{
     }
 /*Contact Address*/
     .contact-display h3{
-        font-size: 1.8em;
-        font-weight: 300;
+        font-size: 2.4em;
+        font-weight: 500;
+        margin: 20px auto;
     
     }
     .contact-display p{
-        font-size: 1.6em;
-        font-weight: 300;
+        font-size: 2em;
+        font-weight: 500;
         color: #2B2B2B;
-        margin: 15px auto;
+        margin: 20px auto;
     }
 
     #maps div.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed {  
@@ -887,10 +888,10 @@ span .ui-icon .ui-icon-plus{
     #com div a img{
     }
     #com div a span{
-        background-size: 100px;
-        background-position: 0 20px;
-        padding-left: 100px;
-        padding-bottom: 60px;
+    background-size: 150px;
+    background-position: 0 10px;
+    padding-left: 150px;
+    padding-bottom: 120px;
     }
     .feature .article-headline{
         font-size: 1.8em;  

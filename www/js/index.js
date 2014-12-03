@@ -21,7 +21,7 @@ function jsonTitles(holdData){
         jsonpCallback: 'jsonCallback',
         dataType: 'jsonp',
         cache: false,
-        timeout: 15000,
+        timeout: 20000,
         success: function(data) {
             /*console.log(data);*/
             holdData(data);
@@ -50,7 +50,6 @@ function jsonTitles(holdData){
                 
             });
         }   
-        
     });
 }
     
@@ -296,13 +295,26 @@ function initiateList(){
                 $articledate = $timestamp.toDateString(),
                 /*$articledate = $datestring.slice(0, -4),*/
                 $headline = $.trim(this['node_title']),
-                regex = /<img.*?src="(.*?)"/,
-                $thumb = regex.exec(this['thumbnail'])[1],
-                $image = regex.exec(this['field_image'])[1],
+                /*regex = /<img.*?src="(.*?)"/,*/
+                $thumb = $(this['thumbnail']).attr('src'),
+                $image = $(this['field_image']).attr('src'),
                 $text = this['body'],
+                $imageGrab = $($text).find('img').attr('src'),
                 $intro = $.trim($text.replace('<p>', '').substr(0,95)),
                 $newslist = $('#newslist');
-
+            
+            console.log(typeof($text));
+            
+            if(typeof($imageGrab)=='string'){
+                if($imageGrab.slice(0, 18)!='http://www.pfai.ie'){
+                        $imageGrab='http://www.pfai.ie'+$imageGrab;
+                        $src = $($text).find('img').attr('src');
+                        $height = $($text).find('img').attr('height');
+                        $text = $text.replace($src, $imageGrab);
+                        $text = $text.replace($height, 'auto');
+                }
+            }
+            
             
         $newslist.append(
                         $('<li />', {
