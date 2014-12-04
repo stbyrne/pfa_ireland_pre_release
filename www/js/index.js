@@ -21,7 +21,7 @@ function jsonTitles(holdData){
         jsonpCallback: 'jsonCallback',
         dataType: 'jsonp',
         cache: false,
-        timeout: 20000,
+        timeout: 8000,
         success: function(data) {
             /*console.log(data);*/
             holdData(data);
@@ -41,7 +41,7 @@ function jsonTitles(holdData){
                     console.log(data);
                     holdData(data);
                     initiateBackList();
-                    alert('Unable to connect to database. Current Player Transfer List & Latest News will not be included. Please check your connection and restart the application.');
+                    alert('OOPS!. Current Player Transfer List & Latest News are unavailable at the moment. Please check your connection and restart the application.');
                     
                 },
                 error: function() {
