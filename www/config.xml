@@ -24,6 +24,15 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    
+    <gap:config-file platform="ios" parent="NSLocationAlwaysUsageDescription" overwrite="true">
+
+
+        <string>PFA Ireland Mobile would like to use your current location</string>
+
+
+    </gap:config-file>
 	
 	<preference name="permissions"                value="none"/>
 
