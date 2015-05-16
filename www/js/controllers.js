@@ -180,7 +180,7 @@ angular.module('starter.controllers', [])
     
 }])
 
-.controller('NewsCtrl', ['$scope', 'newsFactory', '$ionicLoading', '$ionicSlideBoxDelegate', '$timeout', function($scope, newsFactory, $ionicLoading , $ionicSlideBoxDelegate, $timeout) {
+.controller('NewsCtrl', ['$scope', 'newsFactory', '$ionicLoading', '$ionicSlideBoxDelegate', '$timeout', '$state', function($scope, newsFactory, $ionicLoading , $ionicSlideBoxDelegate, $timeout, $state) {
    
     $scope.news = [];
     $scope.article = [];
@@ -250,7 +250,7 @@ angular.module('starter.controllers', [])
                 
                 });
         $scope.doRefresh = function(){
-            window.location.reload(true);   
+            $state.go($state.current, {}, {reload: true});
         }
     
 }])

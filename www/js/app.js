@@ -75,6 +75,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
 
     .state('app.news', {
     url: "/news",
+    cache:false,
     views: {
       'menuContent': {
         templateUrl: "templates/news.html",
