@@ -1,0 +1,101 @@
+{
+    "HMOF": [{
+        "MDS": [{
+            "id": "weshoolahan",
+            "index": 1,
+            "hint": "Mappings.xml",
+            "issue": "Resources dont show up on dashboard or in search",
+            "cause": "Component value in inputs do not match any of the list of component values in the mappings.xml",
+            "intro": "\"Donec sit amet pharetra est.\"",
+            "text": "Wesley Hoolahan ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nibh in sapien vulputate lacinia nec eget tortor. Integer tristique mauris nisi, vel sagittis lacus pharetra sit amet. Fusce in purus rhoncus, euismod lorem non, tincidunt nunc. Donec sit amet pharetra est, et fringilla est. Nullam a ipsum non augue venenatis imperdiet. Duis nec molestie massa. Quisque non porttitor nisi, ut viverra mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dapibus scelerisque scelerisque. Nullam aliquam varius felis ut commodo. Mauris sagittis mi quis arcu mattis dapibus in at ligula. Proin luctus leo neque, sed ultricies neque fringilla vitae. Suspendisse sit amet dui quis metus gravida condimentum. Sed mi ante, pretium id mattis et, gravida vel leo. Aliquam erat volutpat. Morbi faucibus turpis eu rutrum vulputate. Donec in pharetra tellus, sit amet mollis mi. Vestibulum sollicitudin nunc at enim accumsan, nec consectetur diam dignissim. Proin id ante suscipit, faucibus elit sit amet, hendrerit libero. Nam vestibulum, turpis non faucibus venenatis, nunc nisl ultrices lectus, in porta lorem sem eu diam. Cras ut dolor eget odio elementum adipiscing. Praesent eget neque scelerisque, mattis metus nec, commodo nibh. Nunc fringilla quis erat non iaculis. Integer semper scelerisque orci, ut sodales risus. Sed eu feugiat magna. Quisque imperdiet a augue in posuere. Sed gravida turpis dui, eu aliquam nisl bibendum in. Sed et ultricies sapien. Curabitur odio ante, malesuada vel molestie nec, pellentesque et ipsum. Integer in venenatis magna. Duis ac lacus lacus. Aenean a porttitor ligula, in fringilla risus. Donec nec urna in risus ultrices volutpat ut id augue. Nulla vitae nunc nec orci fringilla volutpat at id turpis. Aenean ultrices neque id neque pellentesque blandit. Aenean sed tincidunt dui. Donec interdum elementum neque a sagittis. Fusce ut odio dolor. Donec dolor purus, pellentesque a arcu sed, tincidunt condimentum est. Ut a purus quis tellus elementum euismod et eu metus. Sed hendrerit velit sed tortor dignissim, in tincidunt diam cursus. Sed egestas tortor ut pellentesque accumsan. <br><br><img src=https://googledrive.com/host/0B0778NZ3pAKKcm9yUk5vaEdTaWc/weshoolahan.1.png /><br><br>Nulla facilisi. Aliquam sit amet ultricies justo, eget gravida lacus. Maecenas interdum commodo blandit. Suspendisse ullamcorper risus quis sem tincidunt, eu consequat mauris placerat. Etiam a viverra sem. Nunc nec sollicitudin tellus. Nulla ultrices luctus rutrum. Nunc nunc purus, mollis sit amet posuere vitae, condimentum sagittis metus. Pellentesque id odio id metus malesuada porttitor. In turpis augue, tincidunt ac felis in, aliquet rutrum mauris. Integer ullamcorper elit quis augue placerat, sed blandit eros elementum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla a ligula sollicitudin, ullamcorper tortor nec, suscipit leo. Proin egestas eu libero id varius. Duis ullamcorper consectetur dolor non feugiat. Nam feugiat fringilla porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec et ornare ipsum. Donec arcu orci, eleifend ut est et, dapibus dapibus nulla. Pellentesque sollicitudin turpis a ultrices vestibulum. Ut lobortis nisl ac ante lacinia blandit. Quisque vitae orci arcu.",
+            "jira": "https://jira.hmhpub.com/browse/CDEV-17286",
+            "imageUrl": "img/pages/backdrop/backdrop_1.jpg",
+            "video": "http://player.vimeo.com/video/90976423",
+            "interests": {
+                "trainers": ["adidas", "nike"],
+                "clothing": ["Armani t-shirt", "H&M slim jeans"],
+                "smellies": ["Invictus by armani", "Dior Sport by Dior"],
+                "phone": ["iphone"],
+                "tablet": ["ipad"]
+            },
+            "twitter": "@weshoolohan"
+        }, {
+            "id": "chrisforrester",
+            "index": 2,
+            "hint": "Correlations",
+            "issue": "Issue 2",
+            "cause": "The Street Footballer",
+            "intro": "\"I only started playing competitive football when I was 16\"",
+            "text": "Chris Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet iaculis elit, vel vestibulum metus. Cras eleifend pretium massa tristique luctus. Nullam adipiscing, est sed placerat faucibus, erat eros fermentum orci, nec vehicula nunc mi ac tellus. Donec sed augue tortor. Pellentesque vitae ante vel dui faucibus imperdiet. Phasellus nisi magna, pretium et lectus non, tempor condimentum sem. Nulla ac rhoncus leo, vitae ullamcorper dolor. Praesent eget malesuada enim. In auctor at mi eu vehicula. Nulla at condimentum ipsum. Mauris elementum iaculis diam, eget placerat neque venenatis id. Etiam egestas nibh id ligula gravida, et ultricies velit facilisis. Vivamus ac nibh eleifend, dictum purus vitae, dapibus dolor. <br><br>Mauris ut adipiscing erat. Nam congue volutpat interdum. Pellentesque non ullamcorper ipsum. Integer leo urna, convallis at risus a, venenatis sollicitudin libero. Aenean iaculis tortor libero, vitae tempus lacus pharetra at. Vestibulum luctus bibendum leo, pulvinar scelerisque enim cursus aliquam. Nullam vestibulum ipsum non tortor fermentum, sit amet interdum metus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eget ante purus. Donec eu ornare tellus. Donec ipsum nulla, tincidunt vitae placerat ac, convallis in sapien. <br><br>Integer tellus neque, ullamcorper nec pellentesque in, venenatis in velit. Ut non nulla non mi pretium rutrum in sed est. Duis ultrices blandit diam eget sollicitudin. Morbi ac vehicula odio. Donec scelerisque ipsum at pretium euismod. Sed et rutrum elit. Proin pellentesque auctor lorem, sit amet sollicitudin lacus vehicula sit amet. Suspendisse pellentesque lacus vitae tortor dapibus bibendum. Mauris commodo a ante eu pretium. <br><br><img src=https://googledrive.com/host/0B0778NZ3pAKKcm9yUk5vaEdTaWc/chrisforrester.1.png /><br><br>In non bibendum eros. Cras a diam a mi ullamcorper commodo. Etiam dictum consequat nunc ut euismod. Aliquam in quam magna. Aenean sed adipiscing ante. Sed iaculis mi sit amet diam aliquet, ac sagittis risus venenatis. Sed ligula dui, blandit in rutrum id, scelerisque vel mi. Pellentesque quis dolor consequat, laoreet nunc sit amet, faucibus leo. Fusce nisi neque, gravida nec posuere et, feugiat vel diam. Nunc pellentesque id libero nec gravida. <br><br>Etiam consequat arcu a dui gravida, eget tristique purus porttitor. Quisque nec lectus sit amet leo bibendum dapibus. Praesent quis nisl vitae lectus egestas placerat nec faucibus lectus. Vivamus sit amet pretium ipsum, sed commodo mi. Mauris et dolor non lacus viverra fermentum id nec arcu. In hac habitasse platea dictumst. Ut sed cursus nunc. Nullam at ligula tempor, posuere purus et, fringilla tellus. Proin nec diam eget sem posuere viverra et non massa. Aenean auctor, justo in dapibus condimentum, arcu massa feugiat ipsum, sed euismod tortor ligula ac nunc. <br><br>Vivamus fermentum pretium euismod. Morbi condimentum dui sed orci gravida, eget laoreet neque mollis. Quisque in commodo nulla, quis tristique felis.",
+            "jira": "https://jira.hmhpub.com/browse/CDEV-17286",
+            "imageUrl": "img/pages/backdrop/backdrop_2.jpg",
+            "video": "http://player.vimeo.com/video/39532322",
+            "interests": {
+                "trainers": ["adidas", "nike"],
+                "clothing": ["Armani t-shirt", "H&M slim jeans"],
+                "smellies": ["Invictus by armani", "Dior Sport by Dior"],
+                "phone": ["iphone"],
+                "tablet": ["ipad"]
+            },
+            "twitter": "@chrisforrester"
+        }],
+        "Knowledge Graph": [{
+            "id": "fionnualabritton",
+            "index": 3,
+            "hint": "Content ID",
+            "issue": "Issue 3",
+            "cause": "Middle-Distance Gem",
+            "intro": "\"I want that Olympic medal\"",
+            "text": "Fionnuaa Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet iaculis elit, vel vestibulum metus. Cras eleifend pretium massa tristique luctus. Nullam adipiscing, est sed placerat faucibus, erat eros fermentum orci, nec vehicula nunc mi ac tellus. Donec sed augue tortor. Pellentesque vitae ante vel dui faucibus imperdiet. Phasellus nisi magna, pretium et lectus non, tempor condimentum sem. Nulla ac rhoncus leo, vitae ullamcorper dolor. Praesent eget malesuada enim. In auctor at mi eu vehicula. Nulla at condimentum ipsum. Mauris elementum iaculis diam, eget placerat neque venenatis id. Etiam egestas nibh id ligula gravida, et ultricies velit facilisis. Vivamus ac nibh eleifend, dictum purus vitae, dapibus dolor. <br><br>Mauris ut adipiscing erat. Nam congue volutpat interdum. Pellentesque non ullamcorper ipsum. Integer leo urna, convallis at risus a, venenatis sollicitudin libero. Aenean iaculis tortor libero, vitae tempus lacus pharetra at. Vestibulum luctus bibendum leo, pulvinar scelerisque enim cursus aliquam. Nullam vestibulum ipsum non tortor fermentum, sit amet interdum metus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eget ante purus. Donec eu ornare tellus. Donec ipsum nulla, tincidunt vitae placerat ac, convallis in sapien. <br><br>Integer tellus neque, ullamcorper nec pellentesque in, venenatis in velit. Ut non nulla non mi pretium rutrum in sed est. Duis ultrices blandit diam eget sollicitudin. Morbi ac vehicula odio. Donec scelerisque ipsum at pretium euismod. Sed et rutrum elit. Proin pellentesque auctor lorem, sit amet sollicitudin lacus vehicula sit amet. Suspendisse pellentesque lacus vitae tortor dapibus bibendum. Mauris commodo a ante eu pretium. <br><br><img src=https://googledrive.com/host/0B0778NZ3pAKKcm9yUk5vaEdTaWc/fionnualabritton.1.png /><br><br>In non bibendum eros. Cras a diam a mi ullamcorper commodo. Etiam dictum consequat nunc ut euismod. Aliquam in quam magna. Aenean sed adipiscing ante. Sed iaculis mi sit amet diam aliquet, ac sagittis risus venenatis. Sed ligula dui, blandit in rutrum id, scelerisque vel mi. Pellentesque quis dolor consequat, laoreet nunc sit amet, faucibus leo. Fusce nisi neque, gravida nec posuere et, feugiat vel diam. Nunc pellentesque id libero nec gravida. <br><br>Etiam consequat arcu a dui gravida, eget tristique purus porttitor. Quisque nec lectus sit amet leo bibendum dapibus. Praesent quis nisl vitae lectus egestas placerat nec faucibus lectus. Vivamus sit amet pretium ipsum, sed commodo mi. Mauris et dolor non lacus viverra fermentum id nec arcu. In hac habitasse platea dictumst. Ut sed cursus nunc. Nullam at ligula tempor, posuere purus et, fringilla tellus. Proin nec diam eget sem posuere viverra et non massa. Aenean auctor, justo in dapibus condimentum, arcu massa feugiat ipsum, sed euismod tortor ligula ac nunc. <br><br>Vivamus fermentum pretium euismod. Morbi condimentum dui sed orci gravida, eget laoreet neque mollis. Quisque in commodo nulla, quis tristique felis.",
+            "jira": "https://jira.hmhpub.com/browse/CDEV-17286",
+            "video": "http://player.vimeo.com/video/37099705",
+            "interests": {
+                "trainers": ["adidas", "nike"],
+                "clothing": ["Armani t-shirt", "H&M slim jeans"],
+                "smellies": ["Invictus by armani", "Dior Sport by Dior"],
+                "phone": ["iphone"],
+                "tablet": ["ipad"]
+            },
+            "twitter": "@fionnualabritton"
+        }, {
+            "id": "katietaylor",
+            "index": 4,
+            "issue": "Issue 4",
+            "cause": "Queen of the Ring",
+            "intro": "\"They train once so I train twice\"",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet iaculis elit, vel vestibulum metus. Cras eleifend pretium massa tristique luctus. Nullam adipiscing, est sed placerat faucibus, erat eros fermentum orci, nec vehicula nunc mi ac tellus. Donec sed augue tortor. Pellentesque vitae ante vel dui faucibus imperdiet. Phasellus nisi magna, pretium et lectus non, tempor condimentum sem. Nulla ac rhoncus leo, vitae ullamcorper dolor. Praesent eget malesuada enim. In auctor at mi eu vehicula. Nulla at condimentum ipsum. Mauris elementum iaculis diam, eget placerat neque venenatis id. Etiam egestas nibh id ligula gravida, et ultricies velit facilisis. Vivamus ac nibh eleifend, dictum purus vitae, dapibus dolor. <br><br>Mauris ut adipiscing erat. Nam congue volutpat interdum. Pellentesque non ullamcorper ipsum. Integer leo urna, convallis at risus a, venenatis sollicitudin libero. Aenean iaculis tortor libero, vitae tempus lacus pharetra at. Vestibulum luctus bibendum leo, pulvinar scelerisque enim cursus aliquam. Nullam vestibulum ipsum non tortor fermentum, sit amet interdum metus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eget ante purus. Donec eu ornare tellus. Donec ipsum nulla, tincidunt vitae placerat ac, convallis in sapien. <br><br>Integer tellus neque, ullamcorper nec pellentesque in, venenatis in velit. Ut non nulla non mi pretium rutrum in sed est. Duis ultrices blandit diam eget sollicitudin. Morbi ac vehicula odio. Donec scelerisque ipsum at pretium euismod. Sed et rutrum elit. Proin pellentesque auctor lorem, sit amet sollicitudin lacus vehicula sit amet. Suspendisse pellentesque lacus vitae tortor dapibus bibendum. Mauris commodo a ante eu pretium. <br><br><img src=https://googledrive.com/host/0B0778NZ3pAKKcm9yUk5vaEdTaWc/katietaylor.1.png /><br><br>In non bibendum eros. Cras a diam a mi ullamcorper commodo. Etiam dictum consequat nunc ut euismod. Aliquam in quam magna. Aenean sed adipiscing ante. Sed iaculis mi sit amet diam aliquet, ac sagittis risus venenatis. Sed ligula dui, blandit in rutrum id, scelerisque vel mi. Pellentesque quis dolor consequat, laoreet nunc sit amet, faucibus leo. Fusce nisi neque, gravida nec posuere et, feugiat vel diam. Nunc pellentesque id libero nec gravida. <br><br>Etiam consequat arcu a dui gravida, eget tristique purus porttitor. Quisque nec lectus sit amet leo bibendum dapibus. Praesent quis nisl vitae lectus egestas placerat nec faucibus lectus. Vivamus sit amet pretium ipsum, sed commodo mi. Mauris et dolor non lacus viverra fermentum id nec arcu. In hac habitasse platea dictumst. Ut sed cursus nunc. Nullam at ligula tempor, posuere purus et, fringilla tellus. Proin nec diam eget sem posuere viverra et non massa. Aenean auctor, justo in dapibus condimentum, arcu massa feugiat ipsum, sed euismod tortor ligula ac nunc. <br><br>Vivamus fermentum pretium euismod. Morbi condimentum dui sed orci gravida, eget laoreet neque mollis. Quisque in commodo nulla, quis tristique felis.",
+            "jira": "https://jira.hmhpub.com/browse/CDEV-17286",
+            "video": "http://player.vimeo.com/video/47361394",
+            "imageUrl": "img/pages/backdrop/backdrop_5.jpg",
+            "interests": {
+                "trainers": ["adidas", "nike"],
+                "clothing": ["Armani t-shirt", "H&M slim jeans"],
+                "smellies": ["Invictus by armani", "Dior Sport by Dior"],
+                "phone": ["iphone"],
+                "tablet": ["ipad"]
+            },
+            "twitter": "@katie"
+        }]
+    }],
+    "ThinkCentral": [{
+        "MDS": [{
+            "id": "rorymcilroy",
+            "index": 5,
+            "issue": "Issue 5",
+            "cause": "Eye of the Tiger",
+            "intro": "\"All that matters now is getting back to no.1\"",
+            "text": "Rory Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet iaculis elit, vel vestibulum metus. Cras eleifend pretium massa tristique luctus. Nullam adipiscing, est sed placerat faucibus, erat eros fermentum orci, nec vehicula nunc mi ac tellus. Donec sed augue tortor. Pellentesque vitae ante vel dui faucibus imperdiet. Phasellus nisi magna, pretium et lectus non, tempor condimentum sem. Nulla ac rhoncus leo, vitae ullamcorper dolor. Praesent eget malesuada enim. In auctor at mi eu vehicula. Nulla at condimentum ipsum. Mauris elementum iaculis diam, eget placerat neque venenatis id. Etiam egestas nibh id ligula gravida, et ultricies velit facilisis. Vivamus ac nibh eleifend, dictum purus vitae, dapibus dolor. <br><br>Mauris ut adipiscing erat. Nam congue volutpat interdum. Pellentesque non ullamcorper ipsum. Integer leo urna, convallis at risus a, venenatis sollicitudin libero. Aenean iaculis tortor libero, vitae tempus lacus pharetra at. Vestibulum luctus bibendum leo, pulvinar scelerisque enim cursus aliquam. Nullam vestibulum ipsum non tortor fermentum, sit amet interdum metus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eget ante purus. Donec eu ornare tellus. Donec ipsum nulla, tincidunt vitae placerat ac, convallis in sapien. <br><br>Integer tellus neque, ullamcorper nec pellentesque in, venenatis in velit. Ut non nulla non mi pretium rutrum in sed est. Duis ultrices blandit diam eget sollicitudin. Morbi ac vehicula odio. Donec scelerisque ipsum at pretium euismod. Sed et rutrum elit. Proin pellentesque auctor lorem, sit amet sollicitudin lacus vehicula sit amet. Suspendisse pellentesque lacus vitae tortor dapibus bibendum. Mauris commodo a ante eu pretium. <br><br><img src=https://googledrive.com/host/0B0778NZ3pAKKcm9yUk5vaEdTaWc/rorymcilroy.1.png /><br><br>In non bibendum eros. Cras a diam a mi ullamcorper commodo. Etiam dictum consequat nunc ut euismod. Aliquam in quam magna. Aenean sed adipiscing ante. Sed iaculis mi sit amet diam aliquet, ac sagittis risus venenatis. Sed ligula dui, blandit in rutrum id, scelerisque vel mi. Pellentesque quis dolor consequat, laoreet nunc sit amet, faucibus leo. Fusce nisi neque, gravida nec posuere et, feugiat vel diam. Nunc pellentesque id libero nec gravida. <br><br>Etiam consequat arcu a dui gravida, eget tristique purus porttitor. Quisque nec lectus sit amet leo bibendum dapibus. Praesent quis nisl vitae lectus egestas placerat nec faucibus lectus. Vivamus sit amet pretium ipsum, sed commodo mi. Mauris et dolor non lacus viverra fermentum id nec arcu. In hac habitasse platea dictumst. Ut sed cursus nunc. Nullam at ligula tempor, posuere purus et, fringilla tellus. Proin nec diam eget sem posuere viverra et non massa. Aenean auctor, justo in dapibus condimentum, arcu massa feugiat ipsum, sed euismod tortor ligula ac nunc. <br><br>Vivamus fermentum pretium euismod. Morbi condimentum dui sed orci gravida, eget laoreet neque mollis. Quisque in commodo nulla, quis tristique felis.",
+            "jira": "https://jira.hmhpub.com/browse/CDEV-17286",
+            "video": "http://player.vimeo.com/video/32073805",
+            "imageUrl": "img/pages/backdrop/backdrop_4.jpg",
+            "interests": {
+                "trainers": ["adidas", "nike"],
+                "clothing": ["Armani t-shirt", "H&M slim jeans"],
+                "smellies": ["Invictus by armani", "Dior Sport by Dior"],
+                "phone": ["iphone"],
+                "tablet": ["ipad"]
+            },
+            "twitter": "@rorymcilroy"
+        }]
+    }]
+}

@@ -1,0 +1,61 @@
+<ion-view>
+    
+    <ion-nav-title>Article</ion-nav-title>
+    <ion-nav-bar class="bar-dark">
+        <ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-left">
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    <ion-slide-box show-pager="false" on-slide-changed="nextSlide()" active-slide="myNewsArticle">
+            <ion-slide ng-repeat="article in articles" active="true" scrollbar-y="false">
+                <ion-content class="article">
+                    
+                    <h4 class="news-title">{{article.title}}</h4>
+                    
+                    <div class="list card">
+
+                        <div class="item item-image">
+                            <img src="{{article.image}}">
+                        </div>
+
+                    </div>
+                    
+                    <span class="news-date">{{article.date}}</span>
+                    <p ng-bind-html="article.text"></p>
+                </ion-content>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>
+
+
+<!--<ion-view >
+    <ion-nav-title>Commodity Issues</ion-nav-title>
+<ion-nav-bar class="bar-energized">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-drag"></button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-content>
+        
+    <ion-list>
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search issues" ng-model="searchIssues">
+        </label>
+        <div ng-repeat="(key, issues) in platforms">
+        <ion-item  class="item-divider item-dark">{{key}}</ion-item>
+            <div ng-repeat="issue in issues">
+                <div ng-repeat="(name, process) in issue">
+        <ion-item  class="item-divider item icon item-icon-left">
+            <i class="icon ion-ios7-gear-outline"></i>{{name}}</ion-item>
+      <ion-item ng-repeat="issues in process | filter:searchIssues " href="#/app/issues/{{issue.issue}}" ng-click="setItem(issues)" class="icon item-icon-right">
+        {{issues.issue}}
+          <i class="icon ion-ios7-arrow-right"></i>
+      </ion-item>
+                    </div>
+                </div>
+        </div>
+    </ion-list>
+</ion-content>
+</ion-view>-->
+

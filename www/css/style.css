@@ -1,0 +1,433 @@
+/* Empty. Add your own CSS if you like */
+
+/* Main Page*/
+
+.main{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/main/home_720.png');
+    /*background-image: url('../img/main/hmh.png');*/
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+}
+.contact-list{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.contact-list .list .item{
+    background-color: transparent;
+    border: none;
+    border-top: 2px solid green;
+}
+.contact-list .list .item .item-content{
+    background-color: rgba(60, 60, 60, 0.65);
+    padding: 3% 25% 3% 5%;
+}
+.popover{
+    background-color: rgba(255,255,255, 0.9);
+    border: none;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 0 15px 15px;
+    
+}
+contact-list .list .item-divider h2, contact-list .list .item-divider p{
+    color: #fff;
+    
+}
+.contact-list .list .item .item-content:active{
+    background-color: rgba(255,255,255, 0.6);
+}
+.contact-list .list .item .item-content h4{
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(255,255,255);
+    border-bottom: 5px solid rgb(255, 170, 0);
+}
+.contact-list .list .item .item-content:active h4{
+    color: rgb(40,40,40);
+}
+.contact-list .list .item .item-content p{
+    font-size: .8em;
+    font-weight: 200;
+    color: rgb(255,255,255);
+}
+.contact-list .list .item .item-content:active p{
+    color: rgb(40,40,40);
+}
+.contact-list .list .item .item-content i{
+    color: rgb(255,255,255);
+    font-size: 40px;
+}
+.contact-list .list .item .item-content:active i{
+    color: green;
+}
+.contact{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/main/home_720_blur.png');
+    /*background-image: url('../img/main/hmh_blur.png');*/
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+}
+
+.resource-list .list .item{
+    background-color: transparent;
+    border: none;
+    border-top: 2px solid green;
+}
+.resource-list .list .item .item-content{
+    background-color: rgba(60, 60, 60, 0.65);
+    padding: 3% 25% 3% 5%;
+}
+
+resource-list .list .item-divider h2, resource-list .list .item-divider p{
+    color: #fff;
+    
+}
+.resource-list .list .item .item-content:active{
+    background-color: rgba(255,255,255, 0.6);
+}
+.resource-list .list .item .item-content h4{
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(255,255,255);
+    border-bottom: 5px solid rgb(255, 170, 0);
+}
+.resource-list .list .item .item-content:active h4{
+    color: rgb(40,40,40);
+}
+.resource-list .list .item .item-content p{
+    font-size: .8em;
+    font-weight: 200;
+    color: rgb(255,255,255);
+}
+.resource-list .list .item .item-content:active p{
+    color: rgb(40,40,40);
+}
+.resource-list .list .item .item-content i{
+    color: rgb(255,255,255);
+    font-size: 40px;
+}
+.resource-list .list .item .item-content:active i{
+    color: green;
+}
+.resources{
+    background-image: url('../img/main/home_720_blur.png');
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+}
+.bar{
+    border-bottom: none;
+    border-width: 0;
+    background-size: 100% 0;
+}
+
+.bar-light{
+    background-color: transparent;
+    border: none;
+    border-width: 0;
+    
+}
+.bar.bar-light{
+    background-color: transparent;
+    border: none;
+    border-width: 0;
+}
+.item-button-right > .button-home, .item-button-right > .button-more{
+    bottom: 5px;
+    right: 2px;
+    top:auto;
+    color: rgb(255, 170, 0);
+}
+
+map {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scroll {
+    height: 100%;
+}
+
+/* Loader customization */
+.loading {
+    background-color: rgba(0,0,0,0)!important;
+}
+i.icon.ion-loading-c {
+    color: rgb(0,170,50);
+    zoom: 4;
+}
+
+/* Transfer List */
+
+.transfer-list{
+    padding: 5px;   
+}
+
+.transferlist .col{
+    padding: 1px;  
+}
+
+.transferlist .row{
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid rgba(150,150,150, 0.6);  
+}
+.list-title{
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: rgb(0,170,50);
+    color: rgb(255, 255, 255); 
+        
+}
+
+.transferlist .list-detail{
+    font-size: 9px;
+    font-weight: 300;
+        
+}
+
+.bar.bar-stable .title.title-green{
+    color: rgb(0,170,50);
+}
+
+.transfer-list-icons .icon{
+    color: #ffa700;   
+}
+
+/* Articles - Slidebox */
+
+.slider{
+    height: 100%;   
+}
+
+.article img{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    margin: 0 0 20px; 
+    border-radius: 0; 
+}
+
+.article h4{
+    
+  text-align: center;
+  font-weight: 400;
+  color: rgb(255, 170, 0);
+  margin: 0;
+  padding: 10px 0;
+  background-color: rgb(235,235,235);
+    
+}
+.article span{
+    
+    font-size: 12px;
+    margin-left: 2px;
+    padding-right: 5px;
+    
+}
+.article p{
+    
+    margin: 20px 1px;
+    font-size: 16px;
+    font-weight: 200;
+    
+}
+/*News Search Bar*/
+
+.news-search, .transfer-search{
+    background-color: #f4f4f4;  
+}
+
+h4.news-date, span.news-date{
+    font-size: 12px;
+    color: rgb(0,170,50);
+    font-weight: 300;
+    /*position: absolute;
+    bottom: 10px;*/ 
+}
+
+button.icon.button-icon.ion-ios7-close-outline {
+    position: absolute;
+    right: 0;
+    color: #bbb;
+}
+
+/*Section content from JSON*/
+
+img.section-main{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0 auto 20px;
+    -webkit-box-shadow: 0 0 5px rgba(111, 111, 111, 0.85);
+    box-shadow: 0 0 5px rgba(111, 111, 111, 0.85);
+}
+
+.fagan, .brennan, .shelley, .ndo, .byrne, .fahey, .twigg, .ryan, .quigley{
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+}
+.fagan{
+       background-image: url('../images/content/fagan.png');
+}
+.brennan{
+       background-image: url('../images/content/brennan.png');
+}
+.shelley{
+       background-image: url('../images/content/shelley.png');
+}
+.byrne{
+       background-image: url('../images/content/byrne.png');
+}
+.fahey{
+       background-image: url('../images/content/fahey.png');
+}
+.ndo{
+       background-image: url('../images/content/ndo.png');
+}
+.twigg{
+       background-image: url('../images/content/twigg.png');
+}
+.ryan{
+       background-image: url('../images/content/ryan.png');
+}
+.quigley{
+       background-image: url('../images/content/quigley.png');
+}
+
+.section-detail{
+    background-color: rgba(60, 60, 60, 0.8);
+    color: #fff;
+    position: relative;
+    top: 50%;
+    padding-bottom: 20px;
+}
+
+.highlight{
+    background-color: rgba(0, 170, 50, .95); 
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1.6em;
+    font-weight:  400;
+    margin: 20px 0;
+}
+.lowlight{
+    background: rgb(230,230,230); 
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight:  400;
+    margin-bottom: 20px; 
+}
+.tw-date{
+    background: rgb(230,230,230); 
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight:  400;
+    margin-bottom: 20px; 
+}
+
+.static-image-small{
+    width: 50%;
+    display: block;
+    position: relative;
+    margin: 5px auto 10px;
+    -webkit-box-shadow: 0 0 5px rgba(111, 111, 111, 0.85);
+    box-shadow: 0 0 5px rgba(111, 111, 111, 0.85);
+}
+
+.section-content p{
+    padding: 0 5px;
+    font-weight: 300;
+    /*font-size: 1em;*/
+}
+.section-content a{
+    color: rgb(255, 170, 0);
+}
+
+@media only screen and (min-width: 48em) {
+    
+    .main{
+        background-image: url('../img/main/home_768.png');
+    }
+    
+    .contact{
+        background-image: url('../img/main/home_768_blur.png');
+    }
+    .resources{
+        background-image: url('../img/main/home_768_blur.png');
+    }
+    
+    .static-image-small{
+        width: 30%;
+    }
+    
+    .article h4{  
+        font-size: 24px;
+    
+    }
+    .article span{
+
+        font-size: 14px;
+        letter-spacing: .5px;
+
+    }
+    .article p{
+
+        font-size: 20px;
+        line-height:  1.2;
+        letter-spacing: .5px;
+
+    }
+    
+    .highlight{
+        font-size: 2em;
+        letter-spacing: .5px;
+    }
+    .lowlight{
+        font-size: 1.6em;
+        letter-spacing: .5px;
+    }
+    .section-detail p{
+        font-size: 1.4em;
+        line-height:  1.4;
+        letter-spacing: .5px;
+    }
+}
+
+@media only screen and (max-height: 420px) {
+      
+      
+      .contact-list .list .item .item-content h4{
+        font-size: 1.5em;
+        } 
+      .contact-list .list .item .item-content{
+        background-color: rgba(60, 60, 60, 0.65);
+        padding: .5% 25% .5% 5%;
+        }
+
+}
