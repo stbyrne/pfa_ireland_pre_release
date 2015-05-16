@@ -217,7 +217,6 @@ angular.module('starter.controllers', [])
                 $articleIntro = $($getBody).html().substr(0,80) + '...' + ' read more',
                 $articleThumb = $(value["thumbnail"]).attr('src');
             
-            console.log($articleIntro);
             
             $.each($($articleBody).find('img'), function(){
                 if($(this).attr('src').slice(0,18)!='http://www.pfai.ie'){
