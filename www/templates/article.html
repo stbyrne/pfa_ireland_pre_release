@@ -8,24 +8,21 @@
     
     <ion-slide-box show-pager="false" on-slide-changed="nextSlide()" active-slide="myNewsArticle">
             <ion-slide ng-repeat="article in articles" active="true" scrollbar-y="false">
-                <ion-content class="article fagan">
+                <ion-content class="article fagan-inv">
                     
-                    <div class="article-detail">
-                    
-                        <h4 class="news-title">{{article.title}}</h4>
+                    <h4 class="news-title">{{article.title}}</h4>
 
-                        <div class="list card">
+                    <div class="list card">
 
-                            <div class="item item-image">
-                                <img src="{{article.image}}">
-                            </div>
-
+                        <div class="item item-image">
+                            <img src="{{article.image}}">
                         </div>
 
-                        <span class="news-date">{{article.date}}</span>
-                        <p ng-bind-html="article.text"></p>
-                        
                     </div>
+
+                    <span class="news-date">{{article.date}}</span>
+                    <p ng-bind-html="article.text"></p>
+                        
                 </ion-content>
         </ion-slide>
     </ion-slide-box>
